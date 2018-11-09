@@ -7,36 +7,75 @@
     <link rel="stylesheet" href="jasper.css">
     <link href='https://fonts.googleapis.com/css?family=Euphoria Script' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Poly' rel='stylesheet'>
+
+    <script>
+    
+    var dogImages = new Array();
+            dogImages[0] = new Image(); 
+            dogImages[0].src = "d1.jpg"; //the image path file goes here
+
+            dogImages[1] = new Image(); 
+            dogImages[1].src = "d2.jpg";  //remember to change the element locaton
+
+            dogImages[2] = new Image(); 
+            dogImages[2].src = "d3.jpg"; 
+
+            dogImages[3] = new Image(); 
+            dogImages[3].src = "d4.jpg"; 
+            
+            //set up an array for the image desciptions as well
+            var dogNames = ["Chopper", "Nami", "Jembei", "Blackfoot"]; 
+            
+            function dogImage(index)
+            {
+                document.getElementById("img1").src = dogImages[index].src;
+            }
+    </script>
 </head>
 
 <body>
     <div class=row>
-            <div class="header">
-                    <h1><b>Jasper, Alberta</b></h1>
-                </div>
-        <div class="col-3">
-            
-        </div>
-        <div class="col-9">
-            <div class="post">
-
-                <p>
-
-                Welcome to Jasper, Alberta! Extending over 11,000 square kilometres, it's the largest national park in the Canadian Rockies and part of UNESCO's 
-                Canadian Rocky Mountain Parks World Heritage Site.<br /><br />
-
-                </p>
-
+        <div id="img">
+            <div id="header">
+                <h1><b>Jasper, Alberta</b></h1>
             </div>
-
-
         </div>
-        <div class="col-12"></div>
+        <div class="post">
+            <p>
 
+                Welcome to Jasper, Alberta! Extending over 11,000 square kilometres, it's the largest national
+                park
+                in the Canadian Rockies and part of UNESCO's
+                Canadian Rocky Mountain Parks World Heritage Site.<br /><br />
+                We are very excited for you to come visit! In the meantime, meet your nature travel leads! 
+                Each leader manages a team of sled dogs and will guide you through our beautiful icy trails:
+                <br />
 
+            </p>
+        </div>
     </div>
 
+    <div class="array">
+        <table>
+            <script>
+                  for (i=0; i < dogNames.length; i++){
+                     document.write("<tr>");
+                     // this is for the travel descriptons
+                     document.write("<td onmouseover= 'dogImage(" +i + ");'>" + dogNames[i] + "</td>" ); 
+                     document.write("</tr>");
+                }
+            </script>
+        </table>     
+    </div>
+
+    <br />
+    <p id="dogname"></p>
+    <img id="img1" src="d1.jpg";>
 
 </body>
+
+<footer>
+
+</footer>
 
 </html>
