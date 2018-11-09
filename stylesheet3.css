@@ -1,0 +1,77 @@
+
+html{
+    background-image: url(cabin.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+h1{
+    margin:35px;
+    font-family: 'Euphoria Script';
+    font-size: 70px;
+    padding:8px;
+}
+
+.container1{
+    /*position: relative;*/
+    bottom:0;
+    margin:10px 0px 0px 100px ;
+    max-width:420px;
+    min-width:220px;
+
+    height:auto;
+    width: 30%;
+    padding: 18px;
+    background-color:white;
+    border-radius: 8px;
+}
+
+.registerlb{
+    font-family:'Lora';
+    font-size: 45px;
+    
+}
+
+input[type=text], input[type=password], input[type=date], input[type=phone] {
+    width: 100%;
+    padding: 5px;
+    margin: 3px 0 5px 0;
+    border: none;
+    background: rgb(197, 196, 196);
+  }
+
+.mainform{
+    font-family:'Lora';
+    font-size: 18px;
+
+}
+
+.btn {
+    border: none;
+    color: white;
+    padding: 15px 45px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.submit{
+    background-color:#4d944d;
+    border-radius:8px;
+}
+
+.submit:hover{
+    background-color:#114911b6;
+}
+
+.reset{
+    background-color:#4d944d;
+    border-radius:8px;
+}
+.reset:hover{
+    background-color:#114911b6;
+}

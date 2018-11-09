@@ -1,0 +1,57 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 5px;
+    background-image: url("bkpattern.jpg");
+}
+
+h1 {
+    font-family: 'Euphoria Script';
+    font-size: 70px;
+    background-color:  #80e6ff;
+    padding: 30px;
+    margin: 25px 0px 20px 0px;
+}
+
+.responsive{
+    width:100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 18px;
+}
+
+.responsive > img{
+    width:100px;
+    margin: 40px 20px 40px 20px;
+}
+
+.images{
+    width:700px;
+    height: auto;
+    padding: 10px 10px 20px 10px;
+}
+
+.transoverlay{
+    position: absolute;
+    bottom: 2;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    font-size: 20px;
+    width: 680px;
+    padding: 20px;
+    margin: 130px 0px 0px 10px;
+
+
+    transition:0.5s ease;
+    font-size: 50px;
+    text-align: center;
+    opacity:0;
+}
+
+.container:hover .transoverlay{
+    opacity: 1;
+}

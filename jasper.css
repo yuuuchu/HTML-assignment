@@ -1,0 +1,13 @@
+*{
+    box-sizing: border-box;
+}
+
+h1 {
+    font-family: 'Euphoria Script';
+    font-size: 70px;
+    background-image: url(jasperbanner.jpg);
+    padding: 30px;
+    margin: 25px 0px 20px 0px;
+    background-repeat:no-repeat;
+    background-size:cover;
+}

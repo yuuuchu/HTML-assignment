@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="stylesheet3.css">
+<link href='https://fonts.googleapis.com/css?family=Euphoria Script' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet'>
+
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Register Form</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+    </head>
+   
+    <body>
+            <h1>Stay, Relax, Breathe</h1>
+        &nbsp;<form method="get" action="http://localhost/bouncer.php">
+            
+            <div class="container1">
+                 &nbsp;&nbsp;<label class="registerlb"><b>Register</b></label><br /><br /><br />
+
+                 <!--Labels and input is not in table format due to sizing limitations-->
+                <div class="mainform">
+                     <form method="post" action="bouncer.php">
+                        <label for ="fname">First Name:</label>
+                        <input type="text" name="fname" id="fname"/>
+                
+                        <label for ="lname">Last Name:</label>
+                        <input type="text" name="lname" id="lname"/>
+                
+                        <label for ="phone">Phone Number:</label></td>
+                        <input type="phone" name="phone"/>
+
+                    <!--Address is NOT a textarea due to resizing issues
+                    Sizing is not supported for textarea-->
+                        <label for ="address">Address:</label><br />
+                        <input type="text" name="address" id="address"/>
+
+                        <br />
+                        <label for ="postalcode">Postal Code:</label>
+                        <input type="text" name="postalcode" id="postalcode"/>
+                
+                        <label for ="City">City:</label>
+                        <input type="text" name="city" id="city"/>
+
+                        <label for ="province/state">Province/State:</label>
+                        <select>
+                            <option value="province">Select a Province</option>
+                            <option value ="AB">Alberta</option>
+                            <option value="SK">Saskatchewan</option>
+                            <option value="BC">British Columbia</option>
+                            <option value="MB">Manitoba</option>
+                            <option value="ON">Ontario</option>
+
+                        </select>
+                        <br />
+                    </form>
+                </div>
+                    <br /><br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="btn submit" type="submit" onclick ="return validate();" id="submit"value="Register">Submit</button> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button class="btn reset" type="reset" onclick="return confirm('Are you sure you want to reset form?');" value="Reset the form" id="reset">Reset</button>
+            </div>
+
+        </form>
+        <br />
+        <br />
+        <script src="rformjava.js"></script>
+    </body>
+    
+    <footer>Copyright &copy; Mountain Travel Experts</footer>
+</html>
