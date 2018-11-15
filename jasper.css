@@ -82,3 +82,20 @@ p {color: white;
     font-size:30;
     text-indent:107px;
 }
+
+.array{
+    color: black; 
+	font-family: 'Poly';
+	text-indent:50px;
+	letter-spacing: 1px;
+	line-height:1.5;
+	text-align:justify;
+    padding: 20px 80px 20px 480px;
+    font-size: 22px;
+}
+
+#img1{
+    width: auto;
+    height:300px;
+    margin: 10px 10px 10px 560px;
+}
